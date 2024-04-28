@@ -1,6 +1,6 @@
 {
   "name": "my-loan-calculator-app",
-  "homepage": "https://y-nekonuko.github.io/DifferenceCalculation/",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
