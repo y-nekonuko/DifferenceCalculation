@@ -73,7 +73,7 @@ function PriceComparisonApp() {
   return (
     <Container className="mt-5">
       {cards.map((card, index) => (
-        <Card key={index} className="mb-3">
+        <Card key={index} className="mb-3 shadow">
           <Card.Body>
             <Form.Group>
               <div className="d-flex">
@@ -129,7 +129,7 @@ function PriceComparisonApp() {
       ))}
       <Row className="fixed-bottom justify-content-center mb-3">
         <Col xs="auto">
-          <Button variant="primary" onClick={handleAddCard} className="rounded-circle p-3">
+          <Button variant="primary" onClick={handleAddCard} className="rounded-circle p-3 shadow">
             <Icon path={mdiPlus} size={1} color="white" />
           </Button>
         </Col>
