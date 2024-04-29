@@ -75,7 +75,7 @@ function PriceComparisonApp() {
       {cards.map((card, index) => (
         <Card key={index} className="mb-3 shadow">
           <Card.Body>
-            <Form.Group>
+            <Form.Group className="mb-3">
               <div className="d-flex">
                 <input
                   type="radio"
@@ -99,18 +99,18 @@ function PriceComparisonApp() {
                 </label>
               </div>
             </Form.Group>
-            <Form.Group>
-              <Form.Label>メモ</Form.Label>
+            <Form.Group className="mb-3">
               <Form.Control
                 type="text"
+                placeholder="メモ"
                 value={card.memo}
                 onChange={(e) => handleMemoChange(index, e)}
               />
             </Form.Group>
-            <Form.Group>
-              <Form.Label>価格</Form.Label>
+            <Form.Group className="mb-3">
               <Form.Control
                 type="number"
+                placeholder="価格"
                 value={card.price}
                 onChange={(e) => handlePriceChange(index, e)}
               />
